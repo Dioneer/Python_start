@@ -75,6 +75,13 @@
 # else:
 #     print('Билет бычный')
 
-# Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек
+# Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек=======
 
 # вариант 1
+# widthChoсk = int(input("Введите ширину шоколадки: "))
+# heighthChoсk = int(input("Введите длину шоколадки: "))
+# remainsChoсk = int(input("Остаток: "))
+# if (remainsChoсk < heighthChoсk*widthChoсk) and (remainsChoсk % heighthChoсk == 0) or (remainsChoсk % widthChoсk == 0):
+#     print("возможно")
+# else:
+#     print("не возможно")
