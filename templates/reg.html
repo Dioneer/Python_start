@@ -1,0 +1,23 @@
+{%extends 'index.html'%}
+
+<body>
+	{% block content %}
+	<form action="" method="POST">
+		{{ form.csrf_token }}
+		{%for row in form%}
+		<div>
+			{{row.label}}
+			{{row}}
+		</div>
+		{%endfor%}
+		{%for error in form.errors%}
+		<div>
+			{{error}}
+		</div>
+		{%endfor%}
+	</form>
+	{% if message %}
+	{{message}}
+	{%endif%}
+	{% endblock %}
+</body>

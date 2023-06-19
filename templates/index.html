@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="{{url_for('static', filename='css/style.css') }}">
+	<title>{{title}}</title>
+</head>
+
+<body>
+	{% block content %}
+	<h1>Hello!</h1>
+	<ul>
+		<li><a href="/students" class="button button-pink"><span>All students list</span></a></li>
+		<li><a href="/login" class="button button-pink"><span>Authorisation</span></a></li>
+		<li><a href="/registr" class="button button-pink"><span>Registration</span></a></li>
+		<li><a href="/profile" class="button button-pink"><span>Profile</span></a></li>
+	</ul>
+	{% endblock %}
+</body>
+
+</html>

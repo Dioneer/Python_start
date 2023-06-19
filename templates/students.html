@@ -1,0 +1,12 @@
+{%extends 'index.html'%}
+
+<body>
+	{% block content %}
+	<ul>
+		{% for row in list %}
+		<li>{{row}}</li>
+		{% endfor %}
+	</ul>
+	<div><a href="/" class="button"><span>Send Back</span></a></div>
+	{% endblock %}
+</body>

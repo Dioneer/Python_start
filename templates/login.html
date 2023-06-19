@@ -1,0 +1,17 @@
+{%extends 'index.html'%}
+
+<body>
+	{% block content %}
+	<form action="" method="POST">
+		{%for row in form%}
+		<div>
+			{{row.label}}
+			{{row}}
+		</div>
+		{%endfor%}
+	</form>
+	{%if message%}
+	{{message}}
+	{%endif%}
+	{% endblock %}
+</body>
