@@ -19,29 +19,41 @@
 
 
 #  Требуется найти в массиве A[1..N] самый близкий по величине элемент к заданному числу X. Пользователь в первой строке вводит натуральное число N – количество элементов в массиве. В последующих  строках записаны N целых чисел Ai. Последняя строка содержит число X
-n = int(input('Введите размер списка:'))
-list_1 = []
-result1 = 'нет большего ближнего числа,'
-result2 = 'нет меньшего ближнего числа'
-small_list = []
-big_list = []
+# n = int(input('Введите размер списка:'))
+# list_1 = []
+# small_list = []
+# big_list = []
+# result1 = 0
+# result2 = 0
+# for i in range(n+1):
+#     if i < n:
+#         k = int(input('Введите натуральное число для заполнения массива:'))
+#         list_1.append(k)
+#     else:
+#         x = int(input('Введите натуральное число для поиска:'))
+# for i in range(len(list_1)):
+#     if x <= list_1[i]:
+#         big_list.append(list_1[i])
+#     elif x > list_1[i]:
+#         small_list.append(list_1[i])
 
-for i in range(len(list_1)):
-    if x <= list_1[i]:
-        big_list.append(list_1[i])
-    elif x > list_1[i]:
-        small_list.append(list_1[i])
+# if len(big_list) > 0:
+#     result1 = big_list[0]
+#     for i in range(len(big_list)):
+#         if result1 > big_list[i]:
+#             result1 = big_list[i]
+# else:
+#     result1 = 'нет ближайшего большего/равного'
 
-for i in range(len(big_list)):
-    if result1 > big_list[i]:
-        result1 = big_list[i]
 
-for i in range(len(small_list)):
-    if result2 < small_list[i]:
-        result2 = small_list[i]
+# if len(small_list) > 0:
+#     for i in range(len(small_list)):
+#         if result2 < small_list[i]:
+#             result2 = small_list[i]
+# else:
+#     result2 = 'нет ближайшего меньшего'
 
-print(f'ближайшее большее/равное число = {result1},' if type(result1) is int else
-      result1, f'ближайшее меньшее число = {result2}' if type(result2) is int else result2)
+# print(result2, result1)
 
 # В настольной игре Скрабл (Scrabble) каждая буква имеет определенную ценность. В случае с английским алфавитом очки распределяются так:A, E, I, O, U, L, N, S, T, R – 1 очко; D, G – 2 очка; B, C, M, P – 3 очка; F, H, V, W, Y – 4 очка; K – 5 очков; J, X – 8 очков; Q, Z – 10 очков. А русские буквы оцениваются так: А, В, Е, И, Н, О, Р, С, Т – 1 очко; Д, К, Л, М, П, У – 2 очка; Б, Г, Ё, Ь, Я – 3 очка; Й, Ы – 4 очка; Ж, З, Х, Ц, Ч – 5 очков; Ш, Э, Ю – 8 очков; Ф, Щ, Ъ – 10 очков. Напишите программу, которая вычисляет стоимость введенного пользователем слова. Будем считать, что на вход подается только одно слово, которое содержит либо только английские, либо только русские буквы.
 
