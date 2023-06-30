@@ -1,11 +1,12 @@
-from flask import Flask, render_template, url_for
+from flask import Flask, render_template, redirect
 from register import RegisterForms
 from login import AuthForms
+
 app = Flask(__name__)
 app.config["SECRET_KEY"] = "hello hello"
 
 
-@app.route('/')
+@app.route('/', methods=["GET", "POST"])
 def idex():
     return render_template('index.html', title="Mane page")
 
