@@ -86,3 +86,5 @@ counter = 0
 #     if 2 < d < 6:
 #         k[i] = 0
 # print(k)
+
+# print(max('milk'))
